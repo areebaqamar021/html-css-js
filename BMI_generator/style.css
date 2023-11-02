@@ -14,10 +14,10 @@
     margin-top: 25px;
 }
 #results {
-    font-size: 35px;
-    margin-left: 90px;
+    font-size: 20px;
+    margin-left: 10px;
     margin-top: 20px;
-    color: rgb(241, 241, 241);
+    color: hwb(0 6% 91%);
   }
   
   button {
