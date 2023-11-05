@@ -1,7 +1,7 @@
 .container{
     width: 575px;
     height: 825px;
-    background-color: beige;
+    background-color: rgb(197, 197, 143);
     text-align: center;
 }
 /* #height, #weight{
@@ -22,7 +22,7 @@
   
   button {
     width: 150px;
-    height: 35px;
+    height: 40px;
     /* margin-left: 90px;
     margin-top: 25px; */
     background-color: #fff;
