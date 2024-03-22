@@ -14,7 +14,7 @@
 //     console.log(arrNames[i])
 // }
 
-let names = function(name='Areeba', fatherName= 'Qamar'){
-    console.log(`My name is ${name} and my father name is ${fatherName}`)
-}
-names()
+// let names = function(name='Areeba', fatherName= 'Qamar'){
+//     console.log(`My name is ${name} and my father name is ${fatherName}`)
+// }
+// names()
