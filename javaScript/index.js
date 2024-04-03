@@ -18,3 +18,16 @@
 //     console.log(`My name is ${name} and my father name is ${fatherName}`)
 // }
 // names()
+
+// const size = 5; // Change this value to increase or decrease the size of the diamond
+
+// for (let i = 1; i <= size; i++) {
+//   let padding = " ".repeat(size - i);
+//   console.log(padding + "*".repeat(2 * i - 1));
+// }
+
+// for (let i = size - 1; i >= 1; i--) {
+//   let padding = " ".repeat(size - i);
+//   console.log(padding + "*".repeat(2 * i - 1));
+// }
+
