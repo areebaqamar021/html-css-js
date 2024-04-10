@@ -31,3 +31,5 @@
 //   console.log(padding + "*".repeat(2 * i - 1));
 // }
 
+let arr = ['areeba', 'habiba', 'aisha', 'afifa'];
+console.log(arr);
