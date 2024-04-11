@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character limit indicator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Textarea character limit indicator</h1>
+    <div id="container">
+        <label for="txt">Type something:</label>
+        <textarea name="type-something" id="txt" maxlength="150" cols="30" rows="10"></textarea>
+    </div>
+    <div id="progress">
+        <div id="progress-bar"></div>
+        <p id="remaining-chars"></p>
+      </div>
+
+      <script src="index.js"></script>
 </body>
 </html>
