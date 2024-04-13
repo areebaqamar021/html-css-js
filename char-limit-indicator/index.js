@@ -20,4 +20,3 @@ function charCounter(inputfield){
         remChars.style.display = "block";
       }
     }
-}
