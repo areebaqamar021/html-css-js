@@ -21,9 +21,21 @@ async function searchWikipedia(query){
 function displayResults(results){
     searchResults.innerHTML = '';
 
-    resultsforEach((result) => {
+    results.forEach((result) => {
         const url = `https://en.wikipedia.org/?curid=${results.pageid}`;
-        const titleLink = `<a href="${url}" target='_blank' rel='noopener'>${result.title} </a>`;`
-        const urlLink = 
-    })
+        const titleLink = `<a href="${url}" target='_blank' rel='noopener'>${result.title} </a>`;
+        const urlLink = `<a href="${url} class="result-link" target="_blank" rel="noopener">${url}</a>`;
+
+        const resultItem = document.createElement('div');
+        resultItem.className = 'result-item';
+        resultItem.innerHTML = `
+        <h3 class="result-title">${titleLink}</h3>
+        ${urlLink}
+        <p class= 'result-snippet'>${result.snippet}</p>      
+        `;
+
+        searchResults.appendChild(resultItem);
+    });
 }
+
+
