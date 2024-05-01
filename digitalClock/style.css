@@ -10,9 +10,9 @@ body {
     flex-direction: column;
   }
   #clock {
-    font-size: 40px;
+    font-size: 25px;
     background-color: orange;
-    padding: 20px 50px;
+    padding: 20px;
     margin-top: 10px;
     border-radius: 10px;
   }

@@ -7,10 +7,17 @@
 </head>
 <body>
     <div class="center">
-        <h1 id="banner">Your local time</h1>
+        <h1 id="banner">Your Local Time</h1>
         <div id="clock"></div>
-      </div>
+    </div>
 
-    <script src="index.js"></script>
+    <script>
+    const clock = document.getElementById('clock');
+    setInterval(function(){
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
+    </script>
+    
 </body>
 </html>
