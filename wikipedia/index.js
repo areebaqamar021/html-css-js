@@ -6,7 +6,7 @@ const searchResults = document.getElementById("search-results");
 const themeToggler = document.getElementById("theme-toggler");
 const body = document.body;
 
-async function searchWikipeida(query) {
+async function searchWikipedia(query) {
   const encodedQuery = encodeURIComponent(query);
   const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
 
@@ -54,7 +54,7 @@ searchForm.addEventListener("submit", async (e) => {
   searchResults.innerHTML = "<div class='spinner'>Loading ... </div>";
 
   try {
-    const results = await searchWikipeida(query);
+    const results = await searchWikipedia(query);
 
     if (results.query.searchinfo.totalhits === 0) {
       searchResults.innerHTML = "<p>No results found. </p>";
