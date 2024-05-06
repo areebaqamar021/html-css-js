@@ -57,7 +57,7 @@ searchForm.addEventListener("submit", async (e) => {
     const results = await searchWikipedia(query);
 
     if (results.query.searchinfo.totalhits === 0) {
-      searchResults.innerHTML = "<p>No results found. </p>";
+      searchResults.innerHTML = "<p>No results found</p>";
     } else {
       displayResults(results.query.search);
     }
