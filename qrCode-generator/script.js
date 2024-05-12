@@ -1,27 +1,16 @@
-const container = document.querySelector(".container");
-qrInput = container.querySelector(".form input");
-generateBtn = container.querySelector(".form button");
-qrImg = container.querySelector(".qr-code img");
-
-let preValue;
-
-generateBtn.addEventListener("click", () => {
-    let qrValue = qrInput.value.trim();
-    if (!qrValue || preValue === qrValue) return;
-    preValue = qrValue;
-    generateBtn.innerText = "Generating QR Code...";
-    qrImg.src = ` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
-
-    qrImg.addEventListener("load", () => {
-        container.classList.add("active");
-        generateBtn.innerText = "Generate QR Code";
-    });
-});
-
-qrInput.addEventListener("keyup", () => {
-    if (!qrInput.value.trim()) {
-        container.classList.remove("active");
-        preValue = "";
+function generateQR() {
+    var text = document.getElementById('text').value;
+    if (!text) {
+        alert('Please enter text or URL');
+        return;
     }
-});
-
+    
+    var qrCodeDiv = document.getElementById('qrcode');
+    qrCodeDiv.innerHTML = '';
+    
+    var qr = qrcode(0, 'M');
+    qr.addData(text);
+    qr.make();
+    var qrImage = qr.createImgTag(7); // Increase size to 7
+    qrCodeDiv.innerHTML = qrImage;
+}
