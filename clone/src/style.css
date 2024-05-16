@@ -52,12 +52,31 @@ body {
 }
 
 .signin_button {
-  background-color: #dc030f;
-  border: 1px solid #dc030f;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.70rem 0.8rem;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.signin_button a.button-link {
   color: white;
-  padding: 0.70rem 0.8rem;
-  border-radius: 4px;
-  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.signin_button a.button-link:hover {
+  color: white;
+}
+
+.btn:hover {
+  background-color: #f6121d;
 }
 
 .navbar_nav_items {
