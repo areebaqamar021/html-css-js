@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body class="bg-gray-100">
-  <header class="bg-white shadow">
+  <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold text-gray-900">My Blog</h1>
+      <h1 class="text-4xl font-extrabold text-gray-900">My Blog</h1>
     </div>
   </header>
 
@@ -17,11 +17,35 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Blog Articles Section -->
       <section class="col-span-2">
-        <article class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
+        <article class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
           <div class="px-4 py-5 sm:px-6">
-            <h2 class="text-lg leading-6 font-medium text-gray-900">Sample Blog Post</h2>
-            <p class="mt-1 max-w-2xl text-sm text-gray-500">Category: Web Development</p>
-            <p class="mt-1 max-w-2xl text-sm text-gray-500">Tags: HTML, CSS, JavaScript</p>
+            <h2 class="text-2xl leading-6 font-bold text-gray-900">Sample Blog Post</h2>
+            <p class="mt-1 text-sm text-gray-500">Category: Web Development</p>
+            <p class="mt-1 text-sm text-gray-500">Tags: HTML, CSS, JavaScript</p>
+          </div>
+          <div class="border-t border-gray-200">
+            <div class="px-4 py-5 sm:px-6">
+              <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.</p>
+            </div>
+          </div>
+        </article>
+        <article class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+          <div class="px-4 py-5 sm:px-6">
+            <h2 class="text-2xl leading-6 font-bold text-gray-900">Another Blog Post</h2>
+            <p class="mt-1 text-sm text-gray-500">Category: Design</p>
+            <p class="mt-1 text-sm text-gray-500">Tags: UI/UX, Tailwind CSS</p>
+          </div>
+          <div class="border-t border-gray-200">
+            <div class="px-4 py-5 sm:px-6">
+              <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.</p>
+            </div>
+          </div>
+        </article>
+        <article class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+          <div class="px-4 py-5 sm:px-6">
+            <h2 class="text-2xl leading-6 font-bold text-gray-900">Yet Another Blog Post</h2>
+            <p class="mt-1 text-sm text-gray-500">Category: JavaScript</p>
+            <p class="mt-1 text-sm text-gray-500">Tags: ES6, Async/Await</p>
           </div>
           <div class="border-t border-gray-200">
             <div class="px-4 py-5 sm:px-6">
@@ -32,10 +56,10 @@
       </section>
 
       <!-- Sidebar Section -->
-      <aside class="bg-white shadow overflow-hidden sm:rounded-lg">
+      <aside class="bg-white shadow-md rounded-lg overflow-hidden mb-6 md:col-span-1 self-start">
         <div class="px-4 py-5 sm:px-6">
-          <h3 class="text-lg leading-6 font-medium text-gray-900">Categories</h3>
-          <ul class="mt-2 border-t border-gray-200 pt-4 space-y-2">
+          <h3 class="text-2xl leading-6 font-bold text-gray-900">Categories</h3>
+          <ul class="mt-4 space-y-2">
             <li class="text-sm">
               <a href="#" class="text-indigo-600 hover:text-indigo-900">Web Development</a>
             </li>
@@ -51,7 +75,7 @@
     </div>
   </main>
 
-  <footer class="bg-white shadow">
+  <footer class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
       <p class="text-center text-gray-500 text-sm">&copy; 2024 My Blog. All rights reserved.</p>
     </div>
