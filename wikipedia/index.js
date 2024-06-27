@@ -1,45 +1,39 @@
-async function searchArticles() {
-    const searchTerm = document.getElementById("searchInput").value;
-    if (searchTerm.trim() === "") {
-        alert("Please enter a search term.");
-        return;
-    }
+document.getElementById('searchButton').addEventListener('click', searchWikipedia);
 
-    const url = `https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${encodeURIComponent(searchTerm)}`;
+function searchWikipedia() {
+    const query = document.getElementById('searchInput').value;
+    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${query}&origin=*`;
 
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        displayArticles(data.query.search);
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            displayResults(data.query.search);
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
-function displayArticles(articles) {
-    const articlesContainer = document.getElementById("articles");
-    articlesContainer.innerHTML = "";
+function displayResults(results) {
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
 
-    articles.forEach(article => {
-        const articleDiv = document.createElement("div");
-        articleDiv.classList.add("article");
+    results.forEach(article => {
+        const articleDiv = document.createElement('div');
+        articleDiv.classList.add('article');
 
-        const title = document.createElement("h2");
-        title.innerHTML = article.title;
-
-        const snippet = document.createElement("p");
-        snippet.innerHTML = article.snippet;
-
-        const link = document.createElement("a");
-        link.href = `https://en.wikipedia.org/wiki/${encodeURIComponent(article.title)}`;
-        link.textContent = "Read more";
-        link.target = "_blank"; // Open link in a new tab
-
+        const title = document.createElement('h2');
+        title.textContent = article.title;
         articleDiv.appendChild(title);
+
+        const snippet = document.createElement('p');
+        snippet.innerHTML = article.snippet;
         articleDiv.appendChild(snippet);
+
+        const link = document.createElement('a');
+        link.href = `https://en.wikipedia.org/?curid=${article.pageid}`;
+        link.target = '_blank';
+        link.textContent = 'Read more';
         articleDiv.appendChild(link);
 
-        articlesContainer.appendChild(articleDiv);
+        resultsDiv.appendChild(articleDiv);
     });
 }
-

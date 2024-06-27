@@ -1,52 +1,58 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search-container {
-  margin-bottom: 20px;
-}
-
-input {
-  width: calc(100% - 80px);
-  padding: 8px;
+#searchInput {
+  width: calc(100% - 22px);
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
-button {
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: #fff;
+#searchButton {
+  width: 10%;
+  padding: 10px;
+  background-color: #007BFF;
   border: none;
-  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-button:hover {
+#searchButton:hover {
   background-color: #0056b3;
 }
 
-#articles {
-  padding-top: 20px;
+#results {
+  margin-top: 20px;
 }
 
 .article {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .article h2 {
-  margin-top: 0;
+  margin: 0 0 10px 0;
 }
 
-.article p {
-  margin-bottom: 5px;
+.article a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
 }
