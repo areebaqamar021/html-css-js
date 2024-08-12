@@ -69,6 +69,9 @@ A UI project styled with Tailwind CSS, focusing on a delightful and user-friendl
 - User-friendly design
 - Updated image icon
 
+**Demo:**
+[Live Demo](https://daisydelight.netlify.app/)
+
 ## digitalClock
 
 A digital clock created using HTML, CSS, and JavaScript. The clock's font weight and background color have been updated to improve readability and aesthetics.
