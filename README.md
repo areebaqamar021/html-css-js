@@ -90,6 +90,9 @@ A basic clone of the Netflix homepage using HTML, CSS, and JavaScript. The proje
 - Responsive layout
 - Fixed height issue
 
+**Demo:**
+[Live Demo](https://clonee-site.netlify.app/)
+
 ## product-comparison
 
 A product comparison feature with a responsive design using Tailwind CSS. This project allows users to compare different products side by side, with a focus on responsive design for various devices.
