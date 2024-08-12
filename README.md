@@ -27,7 +27,7 @@ A multi-step survey form designed with Tailwind CSS. This project includes funct
 
 ## blogplatform-tailwind
 
-A simple blog platform built with Tailwind CSS. The project focuses on responsive design and minimalistic UI. The `aside` element's self-start class was removed to improve layout consistency across different screen sizes.
+A simple blog platform built with Tailwind CSS. The project focuses on responsive design and minimalistic UI.
 
 **Features:**
 - Responsive blog layout
@@ -35,7 +35,7 @@ A simple blog platform built with Tailwind CSS. The project focuses on responsiv
 
 ## card-animation
 
-This project demonstrates animated cards using CSS. The description text color has been updated in `style.css` for better readability. The animations are smooth and provide a visually appealing user experience.
+This project demonstrates animated cards using CSS. The animations are smooth and provide a visually appealing user experience.
 
 **Features:**
 - Animated card UI
@@ -44,7 +44,7 @@ This project demonstrates animated cards using CSS. The description text color h
 
 ## contactForm
 
-A basic contact form created using HTML and CSS. The project includes form validation and responsive design. Unused files have been removed to keep the project clean and efficient.
+A basic contact form created using HTML and CSS. The project includes form validation and responsive design.
 
 **Features:**
 - Responsive contact form
@@ -62,19 +62,18 @@ A countdown timer built with HTML, CSS, and JavaScript. This project implements 
 
 ## daisyDelight-tailwind
 
-A UI project styled with Tailwind CSS, focusing on a delightful and user-friendly design. The image icon in `index.html` was updated to enhance the visual appeal of the site.
+A UI project styled with Tailwind CSS, focusing on a delightful and user-friendly design.
 
 **Features:**
 - Tailwind CSS for styling
 - User-friendly design
-- Updated image icon
 
 **Demo:**
 [Live Demo](https://daisydelight.netlify.app/)
 
 ## digitalClock
 
-A digital clock created using HTML, CSS, and JavaScript. The clock's font weight and background color have been updated to improve readability and aesthetics.
+A digital clock created using HTML, CSS, and JavaScript.
 
 **Features:**
 - Real-time digital clock
@@ -83,12 +82,11 @@ A digital clock created using HTML, CSS, and JavaScript. The clock's font weight
 
 ## netflix-clone
 
-A basic clone of the Netflix homepage using HTML, CSS, and JavaScript. The project focuses on replicating the layout and design of the Netflix UI, with a fix for a height issue in `style.css`.
+A basic clone of the Netflix homepage using HTML, CSS, and JavaScript. The project focuses on replicating the layout and design of the Netflix UI.
 
 **Features:**
 - Netflix-like UI design
 - Responsive layout
-- Fixed height issue
 
 **Demo:**
 [Live Demo](https://clonee-site.netlify.app/)
@@ -104,7 +102,7 @@ A product comparison feature with a responsive design using Tailwind CSS. This p
 
 ## qrCode-generator
 
-A QR code generator built with HTML, CSS, and JavaScript. The input field width has been updated in `style.css` to enhance user experience.
+A QR code generator built with HTML, CSS, and JavaScript.
 
 **Features:**
 - QR code generation functionality
